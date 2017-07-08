@@ -1,7 +1,22 @@
+
 #img{
 
   width=300px;
   height=300px;
-
+  
   border-radius: 50%;
+}
+
+.message-style{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	width: 100%;
+	background: #2a2a2a;
+    padding: 2%;
+    margin: 2%;
+    margin-left: 0px;
+    font-size: 30px;
+    color: white;
+    display: none;
 }
