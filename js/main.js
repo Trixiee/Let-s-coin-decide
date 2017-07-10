@@ -18,7 +18,7 @@ function start ()  {
 
 	rotation = setInterval(
 		function(){ 
-			circle.style = `transform: rotateY(${j++}deg)`},1
+			circle.style = `transform: rotateY(${j++}deg)`},1 // svake milisekunde se poziva, j ide preko 360
 		);
 
 	
@@ -48,6 +48,6 @@ function start ()  {
 		}
 
 
-	},360)  
+	},360)  // menja sliku
 	
 }

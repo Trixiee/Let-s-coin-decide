@@ -1,9 +1,10 @@
+body{
+   overflow: hidden;
+}
 
 #img{
-
   width=300px;
   height=300px;
-  
   border-radius: 50%;
 }
 
@@ -13,10 +14,17 @@
 	right: 0px;
 	width: 100%;
 	background: #2a2a2a;
-    padding: 2%;
-    margin: 2%;
-    margin-left: 0px;
-    font-size: 30px;
-    color: white;
-    display: none;
+  padding: 2%;
+  margin: 14%;
+  margin-left: 0px;
+  font-size: 30px;
+  color: white;
+  border: 5px solid #d9534f;
+  border-radius: 10px;
+  display: none;
+}
+
+.class-coin{
+  margin: 7%;
+  cursor: pointer;
 }
