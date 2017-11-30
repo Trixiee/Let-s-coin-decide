@@ -1,30 +1,58 @@
 body{
+   margin: 0px;
    overflow: hidden;
 }
 
-#img{
-  width=300px;
-  height=300px;
-  border-radius: 50%;
+a{
+  text-decoration: initial;
+  color: black;
 }
 
-.message-style{
-	position: absolute;
-	left: 0px;
-	right: 0px;
-	width: 100%;
-	background: #2a2a2a;
-  padding: 2%;
-  margin: 6%;
+#image{
+  width:300px;
+  height:300px;
+  border-radius:50%;
+}
+
+.navbar{
+    padding: 2%;
+    background-color: darkseagreen;
+    border-bottom: 2px solid #D9534D;
+}
+
+.navbar-brand{
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.navbar-start-button{
+    background: #d9534f;
+    padding: 8px 12px;
+    width: 100px;
+    color: white;
+    border:none;
+    margin-left: 10px;
+}
+
+.coin{
+  text-align: center;
+  margin:30px 0 0 0;
+}
+
+.message-container{
+  text-align: center;
+  background-color: darkseagreen;
+	padding: 2%;
+  margin: 30px 0 0 0 ;
   margin-left: 0px;
   font-size: 30px;
-  color: white;
-  border: 5px solid #d9534f;
-  border-radius: 10px;
+  color: black;
+  border: 2px solid #d9534f;
   display: none;
 }
 
-.class-coin{
-  margin: 7%;
-  cursor: pointer;
+@media screen and (min-width: 720px){
+    .circle{
+
+    }
 }

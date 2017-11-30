@@ -2,13 +2,13 @@ let rotation
 let timer
 
 function start ()  {
-	$(".message-style").hide();
+	$(".message-container").hide();
 	$("#message").hide();
 	
-    let i=0;
+	let i=0;
 	let j =0;
 
-   
+	
 	let change = Math.random() < 0.5
 
 	clearInterval(rotation)
@@ -18,18 +18,18 @@ function start ()  {
 
 	rotation = setInterval(
 		function(){ 
-			circle.style = `transform: rotateY(${j++}deg)`},1);
+			image.style = `transform: rotateY(${j++}deg)`},1);
 
 	
 	timer = setInterval(function(){
 
 		if(change){
-			circle.setAttribute("src", "images/coinhead-image.jpg")
+			image.setAttribute("src", "images/coinhead-image.jpg")
 			message="You got head"
 		}else{
-			circle.setAttribute("src", "images/cointail-image.png")
+			image.setAttribute("src", "images/cointail-image.png")
 			message="You got tail"
-		
+			
 		}
 		
 		change = !change
@@ -38,12 +38,12 @@ function start ()  {
 
 			clearInterval(timer)
 			clearInterval(rotation)
-			circle.style = `transform: rotateY(0deg)`
-			$(".message-style").show();			
+			image.style = `transform: rotateY(0deg)`
+			$(".message-container").show();			
 			$("#message").show();
 			$("#message").text(message);
 
-		
+			
 		}
 
 
